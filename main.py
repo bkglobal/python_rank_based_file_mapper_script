@@ -31,7 +31,7 @@ def combine_files(folder_path):
     # Combine and save files by rank
     for rank, contents in file_contents_by_rank.items():
         combined_content = "\n".join(contents)
-        combined_file_name = f"file_rank{rank}_combine.txt"
+        combined_file_name = f"file_rank{rank}_combine.pt"
 
         with open(
             os.path.join(updated_folder_path, combined_file_name), "w"
